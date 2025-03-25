@@ -4,17 +4,5 @@ AUTHORS: Tyler Baxter and Jack Herberger
 
 USAGE: `./mirror_fs [FUSE options] <mountpoint> <directory to mirror>`  
 
-NOTES:  
 
-So - we have been battling with issues with fuse for many many hours now. Unfortunely we were not able to figure out everything.  
-
-We have the "in theory" correct code for `rename` and `unlink` - however, when we uncomment the "correct" code, it breaks our truncate.  
-
-We spent many hours trying to debug this - it says we cannot find the filename. So we left it commented out.  
-
-In addition, please do not do a single arrow echo for your first command. For some bizzare reason, if you do it will crash, but if you remount you will be able to see the changes were made successfully.  
-
-Other than that, everything should be good.  
-
-Thanks for a fun quarter! :)
 
